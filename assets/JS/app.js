@@ -1,8 +1,13 @@
 /*get the number of characters*/
+//  function for character length
+function charChange() {
+  let charChange = document.getElementById("length").value;
+  document.getElementById("result").innerHTML = charChange;
+}
+document.getElementById("length").addEventListener("input", charChange);
 function charLength() {
   // range number
   let charLength = document.getElementById("length").value;
-  document.getElementById("result").innerHTML = charLength;
 
   // checkbox for all
   const upper = document.getElementById("uppercase");
@@ -52,13 +57,11 @@ function charLength() {
   // return charLength;
 }
 
-document.getElementById("length").addEventListener("change", charLength);
-
 document.getElementById("btn").addEventListener("click", charLength);
 
 // My understandings
 // let range = document.getElementById("length").value;
-// console.log(range);
+// xconsole.log(range);
 // let upper = document.getElementById("uppercase").checked;
 
 // // function for checkbox
